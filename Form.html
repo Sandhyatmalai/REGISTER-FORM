@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register Form</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #8eeef1;
+    }
+
+    .container {
+      width: 800px;
+      margin: 60px auto;
+      display: flex;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .left-box {
+      background-color: #2f82c5;
+      color: white;
+      padding: 40px;
+      width: 50%;
+    }
+
+    .left-box h2 {
+      margin-bottom: 20px;
+    }
+
+    .left-box p {
+      font-size: 14px;
+    }
+
+    .left-box button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      background-color: white;
+      color: #2f82c5;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .right-box {
+      padding: 40px;
+      width: 50%;
+    }
+
+    .right-box h2 {
+      color: #2f82c5;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+    input[type="text"], input[type="email"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .checkbox {
+      margin: 10px 0;
+      font-size: 14px;
+    }
+
+    .checkbox a {
+      color: #2f82c5;
+      text-decoration: none;
+    }
+
+    .register-btn {
+      padding: 10px 20px;
+      background-color: #2f82c5;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .warning {
+      color: orange;
+      font-size: 12px;
+      margin-top: -10px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="left-box">
+      <h2>WELCOME</h2>
+      <p>Join us to access exclusive features, updates, and member-only content.  
+Register in seconds and become part of our growing community.
+</p>
+      <p><b>TERMS:</b><br>
+        ✔ Easy Sign Up  <br>
+✔ Secure Information  <br>
+✔ Personalized Experience
+
+
+      </p>
+      <button>Have An Account</button>
+    </div>
+
+    <div class="right-box">
+      <h2>REGISTER FORM</h2>
+      <div class="form-group">
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+      </div>
+      <div class="form-group">
+        <input type="email" placeholder="Your Email">
+      </div>
+      <div class="form-group">
+        <input type="password" placeholder="Password">
+        <input type="password" placeholder="Confirm Password">
+      </div>
+      <div class="warning">⚠ Wrong Password</div>
+      <div class="checkbox">
+        <input type="checkbox" id="terms">
+        <label for="terms"> I agree to the <a href="#">Terms and Conditions</a></label>
+      </div>
+      <button class="register-btn">Register</button>
+    </div>
+  </div>
+
+</body>
+</html>
